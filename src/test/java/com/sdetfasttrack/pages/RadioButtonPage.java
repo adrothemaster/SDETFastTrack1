@@ -17,6 +17,22 @@ public class RadioButtonPage {
     //8. Click radio button #Red to select it.
     //6. Verify radio button #Red is selected.
     //6. Verify radio button #Blue is not selected.
+public RadioButtonPage(){
+    PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+    @FindBy(xpath = "//input[@id='blue']")
+    public WebElement blueRadioButton;
+
+    @FindBy(id = "football")
+    public WebElement footballButton;
+
+    @FindBy(id = "red")
+    public WebElement redButton;
+
+
+
+
 
 
 }
